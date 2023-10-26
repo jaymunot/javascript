@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="black">
+        <h1 class="heading">dom learning</h1>
+        <p>Lorem ipsum dolor sit.</p>   
+    </div>
+
+</body>
+<script>
+    console.log(window);
+
+console.log(document);
+
+document.getElementById("title").innerHTML = "<h1>chai aur code</h1>"
+// changed the id value 
+// id is the method followed by paranthesis
+document.getElementById("title").id
+
+document.getElementById("title").getAttribute('id')
+
+const one = document.getElementById("title")
+
+one.style.backgroundColor = "red"   
+
+document.getElementById("title").setAttribute('clas',"value")
+
+document.getElementsByClassName()
+
+//how to add content
+one.innerHTML
+//his will show the content including tags and attributes 
+one.innerText
+// this will give the value which is displayed 
+one.textContent
+//  hiden content is visible
+
+// queryselector
+document.querySelector("h1")
+//this will give the first h1 taqg 
+
+document.querySelectorAll("h1")
+//this will give all the h1 tags
+
+document.querySelector('#')
+document.querySelector('.')
+// # and . are used for the class and the id 
+
+//nodelist and the htmlcollection are not the array they posses the property like array
+//you havr to giev index for the manipulation
+// use forEach for the nodelist to manipulate
+// map cant be used as the nodelsit is not the array 
+//you have to convert the nodelist into the array then u can use the map method     
+
+//htmlcollection have to convert into the array
+//array.from(name of the htmlcollection) == syntax for the conversion
+
+
+</script>
+</html>

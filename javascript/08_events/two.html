@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web functions</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="button">stop</button>
+</body>
+<script>
+    const print = () => {
+        console.log('jayesh');
+    }
+    setTimeout(print, 2000);
+    // you can give function inside the setTimeout
+
+    const change = function(){
+        document.querySelector('h1').innerHTML = 'jay'
+    }
+
+    const changeMe = setTimeout(change,2000)
+    //changed to jay within 2 sec
+
+    document.getElementById('button').addEventListener('click',function(){
+        clearTimeout (changeMe)
+    })
+</script>
+</html>

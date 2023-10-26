@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APi</title>
+</head>
+<body>
+    <h1>api</h1>
+    <div id="id1">
+
+    </div>
+    <button id="btn">GET</button>
+</body>
+<script>
+    const url = ''
+    const data = new XMLHttpRequest()
+    data.open('GET',url)
+    //method and string in open (open has not called yet)
+    // to call open
+    function follower(){
+         data.onreadystatechange= function(){
+        // console.log(data.readyState);
+        if(data.readyState == 4 ){
+                const follow = JSON.parse(this.responseText)
+                console.log(follow.followers);
+        }
+    } }
+    document.getElementById('btn').addEventListener('click',function(){
+        follower()
+    })
+    //it gives the state 
+    data.send() 
+    // open is called now
+</script>
+</html>

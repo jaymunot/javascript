@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: red;color: white;">
+    <div class="parent">
+        <div class="day">mon</div>
+        <div class="day">tue</div>
+        <div class="day">wed</div>
+        <div class="day">thur</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector(".parent")
+    // console.log(parent);
+    // // accessing the parent array
+    // console.log(parent.children);
+    // //this will give the html collection 
+    // console.log(parent.children[1].innerHTML);
+    // //.innerhtml gives the value and without it it will give tag 
+
+    for (let i = 0; i < parent.children.length; i++) {
+        // console.log(parent.children[i].innerHTML);
+        
+    }
+    parent.children[1].style.color = "yellow"
+    //changed color of tue
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const one = document.querySelector(".day")
+    console.log(one);
+    //this will give the first class
+
+    console.log(one.parentElement);
+    //this willr return the parent class
+
+    console.log(one.nextSibling);
+    //next div 
+
+    console.log("nodes",parent.childNodes);
+    //complex tree structure
+
+    
+</script>
+</html>

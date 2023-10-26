@@ -1,0 +1,14 @@
+javascipt and node 
+vs is code editor
+node js is the software for executing without browser using terminal
+code environment(vs code and nodeJs)
+motive is to build not to learn code
+[;] is not mandatory
+js runs in browser ,its engine is built in browser
+code readilibity should be high 
+ecma for the javascript 
+js objects and browser events do master to be js master 
+master objecs and events like dom for the better js
+api is in xml format (json format)
+the  api can be in object or array
+window is the global object 

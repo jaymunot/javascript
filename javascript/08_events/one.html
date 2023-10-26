@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <h2>amazing images</h2>
+    <div>
+        <ul>
+            <li><img src="" alt="" class="id1" id="name1">1</li>
+            <li><img src="" alt="" class="id2" id="name2">2</li>
+            <li><img src="" alt="" class="id3" id="name3">3</li>
+            <li><img src="" alt="" class="id4" id="name4">4</li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.getElementById('name1').onclick = function(){
+        alert("name1")
+    }
+    // this approach doesnt allow all the events to be executed anfd this is method
+    //attachEvent()
+    //jquery - on this two are also event but old 
+
+    document.getElementById('name2').addEventListener('click',function(){
+        alert('this isname1')
+    },false)
+
+    // document.getElementById('name2').addEventListener('click',function(e){
+    //     console.log(e)
+    // },false)
+    //false is by default 
+     //type ,timestamp,defaultPrevented
+     //tagret ,toElement, srcElement , currentTarget
+     //clientX,clientY,screenX,screenY
+        //altkey,ctrlkey,,shiftkey,keycode
+        //study this events
+
+        //fasle and true are event propoagtion
+        //there are two types of event propogation 1-event bubbling bootom to top(false) and event top to bootom (true)
+        // e.stop propagation is the mthod use for the outer function not ot be executed
+            
+
+</script>
+</html>
+//js events are executed sepuentially
+//take codefrom git
